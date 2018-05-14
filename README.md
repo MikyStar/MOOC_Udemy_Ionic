@@ -6,8 +6,92 @@ In this repository, you can find the work I've done following [Paul Halliday's c
 
 ## What I've learn
 
-### Creating an Angular application
+### Angular
+
+#### Create an Angular project
 
 ```sh
 ng new [Project name]
+```
+
+#### Structure of the folder
+
+##### e2e
+
+e2e is for 'End to end testing' it's different of the unit testing because it checks the userflow of the application.
+
+Basically, it consists on checking the user experience, the flow and functionalities of the application like, will it goes to the page we wanted to if I'm doing this combinaisons of clicks ...
+
+###### node_modules
+
+It contains all the dependencies of the project
+
+##### src
+
+All the files directly link to the project
+
+For instance, index.html is the very main page of the application
+
+##### build
+
+Appears after we build the app
+
+It's like _the compilation_ of all our files in a language that the browser can understand
+
+#### Run an Angular app
+
+```sh
+cd [folder of the project]
+
+ng serve -o
+```
+
+It auto-reloads as you change the code
+
+#### Add a component
+
+```sh
+ng generate component [name of the component]
+```
+
+This create all the files involved in the creation of a component and update the app.module.ts
+
+The --dry-run flag at the end of a generation command specify that you just want a simulation of what will happen, it actually don"t make any creation.
+
+#### Help
+
+```sh
+ng help generate
+```
+
+Gives the list of thing that the Angular CLI is able to generate such as enums, guards, class ...
+
+#### Testing
+
+```sh
+ng test
+```
+
+Will run every tests inside the project
+
+It usually opens a new page in the browser displaying the results but if it fails on it's only written on the CLI, the port in localhost where the page will be displayed is written in the CLI
+
+The tests of each component are in the file containing 'specs.ts'
+
+#### Deployement
+
+```sh
+ng build --prod
+```
+
+The --prod flag says it's for production
+
+It basically compile all the code and optimize it to regular .js, .css and .html files so that the browser can understand it.
+
+The compilation of all of that goes to the .dist folder
+
+#### Angular's documentation online
+
+```sh
+ng doc [the angular thing I want to look up online]
 ```
