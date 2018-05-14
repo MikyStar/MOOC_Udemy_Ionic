@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+// tslint:disable:one-line no-trailing-whitespace quotemark
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +10,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'FirstAngularApp';
 
-  sayHello()
+  sayHello() 
   {
     alert("Hello");
   }
