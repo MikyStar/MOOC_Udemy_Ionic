@@ -14,9 +14,7 @@ export class TestComponent implements OnInit
 	greetings : string;
 
 	constructor()
-	{
-		this.greetings = "Hello you";
-	}
+	{}
 
 	ngOnInit() 
 	{}

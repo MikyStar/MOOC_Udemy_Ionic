@@ -97,3 +97,7 @@ The compilation of all of that goes to the .dist folder
 ```sh
 ng doc [the angular thing I want to look up online]
 ```
+
+#### Two-ways data binding
+
+Need to use ngModel but first of all, in app.module.ts you need to import FormsModule
