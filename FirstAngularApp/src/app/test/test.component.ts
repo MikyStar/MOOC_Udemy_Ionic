@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-test',
-  templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css']
+// tslint:disable:one-line no-trailing-whitespace indent quotemark typedef-whitespace
+
+@Component(
+{
+	selector: 'app-test',
+	templateUrl: './test.component.html',
+	styleUrls: ['./test.component.css']
 })
-export class TestComponent implements OnInit {
 
-  constructor() { }
+export class TestComponent implements OnInit 
+{
+	greetings : string;
 
-  ngOnInit() {
-  }
+	constructor()
+	{
+		this.greetings = "Hello you";
+	}
 
+	ngOnInit() 
+	{}
 }
