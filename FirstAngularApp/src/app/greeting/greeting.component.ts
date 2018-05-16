@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class GreetingComponent implements OnInit 
 {
-	names : string[] = ["Paul", "Dave", "Katie", "Owen", "John"];
+	names : { name : string }[] = [{ name : "Paul"}, { name : "Dave"}, { name : "Katie"}, { name : "Owen"}, { name : "John"}];
 
 	constructor()
 	{}
