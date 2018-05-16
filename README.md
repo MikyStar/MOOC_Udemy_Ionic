@@ -101,3 +101,7 @@ ng doc [the angular thing I want to look up online]
 #### Two-ways data binding
 
 Need to use ngModel but first of all, in app.module.ts you need to import FormsModule
+
+#### *ngIf else *ngFor
+
+In the commit 20bdc59f58789e11a0b568d6debe73e95c12f2c2 we have seen that we can put the thing we want to display just after the if but for the else, we have to define the ng-template : Actually we can also do that for the very first if condition, the way I did is just a shorter way, but this shorter way doesn't exists for the else condition.
