@@ -6,6 +6,8 @@ In this repository, you can find the work I've done following [Paul Halliday's c
 
 ## What I've learn
 
+The most important part of the knowledge I get is in the code : Look for my commits names and the code associated to it
+
 ### Angular
 
 #### Create an Angular project
