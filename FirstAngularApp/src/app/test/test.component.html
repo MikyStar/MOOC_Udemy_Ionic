@@ -1,9 +1,17 @@
-<p *ngIf="!greetings"> <!-- If the greetings variable is null then display this paragraph -->
-  Enter a greeting inside of the text box.
+<p *ngIf="!greetings ; else thisIsAVariable"> <!-- If the greetings variable is null then display this paragraph -->
+	Enter a greeting inside of the text box.
 </p>
 
+<ng-template #thisIsAVariable>
+	<div>
+		<h3 style="font-weight: bold">
+			Thanks for the greeting !
+		</h3>
+	</div>
+</ng-template>
+
 <p>
-  {{ greetings.toUpperCase() }} 1+1 = {{ 1+1 }}
+	{{ greetings.toUpperCase() }} 1+1 = {{ 1+1 }}
 </p>
 
 <input type="text"  [(ngModel)]="greetings" (keyup)="log($event)">
