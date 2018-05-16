@@ -1,20 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 
+// tslint:disable:one-line no-trailing-whitespace indent quotemark typedef-whitespace
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    TestComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+@NgModule
+({
+	declarations: 
+	[
+		AppComponent,
+		TestComponent
+	],
+	imports: 
+	[
+		BrowserModule,
+		FormsModule,
+	],
+	providers: [],
+	bootstrap: [ AppComponent ]
 })
 export class AppModule { }
