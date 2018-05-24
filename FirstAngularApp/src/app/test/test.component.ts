@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class TestComponent implements OnInit 
 {
-	greetings : string;
+	greetings : string = "";
 
 	constructor()
 	{}
