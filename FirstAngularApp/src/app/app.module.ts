@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { GreetingComponent } from './greeting/greeting.component';
+import { PersonNameUpperCasePipe } from './pipes/person-name-upper-case.pipe';
 
 
 
@@ -14,7 +15,8 @@ import { GreetingComponent } from './greeting/greeting.component';
 	[
 		AppComponent,
 		TestComponent,
-		GreetingComponent
+		GreetingComponent,
+		PersonNameUpperCasePipe
 	],
 	imports: 
 	[
