@@ -1,4 +1,4 @@
-<p *ngIf="!greetings ; else thisIsAVariable"> <!-- If the greetings variable is null then display this paragraph -->
+<!-- <p *ngIf="!greetings ; else thisIsAVariable"> 
 	Enter a greeting inside of the text box.
 </p>
 
@@ -14,4 +14,12 @@
 	{{ greetings.toUpperCase() }} 1+1 = {{ 1+1 }}
 </p>
 
-<input type="text" [(ngModel)]="greetings" (keyup)="log($event)"/>
+<input type="text" [(ngModel)]="greetings" (keyup)="log($event)"/> -->
+
+<div >
+
+	<ul>
+		<li *ngFor="let person of people">{{ person.name }}</li>
+	</ul>
+
+</div>

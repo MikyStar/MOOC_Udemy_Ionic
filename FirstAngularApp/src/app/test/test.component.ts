@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PEOPLE } from '../person/person';
 
 
 @Component
@@ -11,7 +11,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class TestComponent implements OnInit 
 {
-	greetings : string = "";
+	greetings : string = ""; 
+	people =  PEOPLE;
 
 	constructor()
 	{}
