@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-// tslint:disable:one-line no-trailing-whitespace indent quotemark typedef-whitespace
+
 
 @Component
 ({
@@ -15,6 +15,6 @@ export class AppComponent
 
 	sayHello() 
 	{
-    	alert("Hello");
+		alert("Hello");
 	}
 }

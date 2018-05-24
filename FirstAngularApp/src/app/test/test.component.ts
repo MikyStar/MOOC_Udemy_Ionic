@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// tslint:disable:one-line no-trailing-whitespace indent quotemark typedef-whitespace
+
 
 @Component
 ({

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { GreetingComponent } from './greeting/greeting.component';
 
-// tslint:disable:one-line no-trailing-whitespace indent quotemark typedef-whitespace
+
 
 @NgModule
 ({
