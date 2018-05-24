@@ -16,4 +16,7 @@
 
 <input type="text" [(ngModel)]="greetings" (keyup)="log($event)"/> -->
 
+<input type="text" [(ngModel)]="personName">
+<button (click)="addPerson(personName)">Add a person</button>
+
 <app-greeting *ngFor="let person of people" [person]="person"></app-greeting>

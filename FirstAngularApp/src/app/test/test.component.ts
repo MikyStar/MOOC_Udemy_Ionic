@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PEOPLE } from '../person/person';
+import { PEOPLE, Person } from '../person/person';
 
 
 @Component
@@ -13,9 +13,15 @@ export class TestComponent implements OnInit
 {
 	greetings : string = ""; 
 	people =  PEOPLE;
+	personName : Person;
 
 	constructor()
 	{}
+
+	addPerson(personName)
+	{
+		this.people.push({name : personName});
+	}
 
 	ngOnInit() 
 	{}
