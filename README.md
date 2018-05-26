@@ -105,3 +105,76 @@ Need to use ngModel but first of all, in app.module.ts you need to import FormsM
 #### *ngIf else *ngFor
 
 In the commit 20bdc59f58789e11a0b568d6debe73e95c12f2c2 we have seen that we can put the thing we want to display just after the if but for the else, we have to define the ng-template : Actually we can also do that for the very first if condition, the way I did is just a shorter way, but this shorter way doesn't exists for the else condition.
+
+### Ionic
+
+#### Create an Ionic project
+
+```sh
+ionic start [Project name] [Optional type of project] [optional --type=ionic[number]]
+```
+
+#### Listing all the kind of projects
+
+```sh
+ionic start --list
+```
+
+#### Run an app
+
+With the browser
+```sh
+ionic serve
+```
+
+With a virtual device `needs the wanted SDK or the device wanted plugged to the computer`
+```sh
+ionic cordova platform add [android / ios] #First of all
+
+ionic cordova run [android / ios] [for live reload -l]
+```
+
+#### Adding something to the app
+
+```sh
+ionic generate [optional thing to generate]
+```
+
+- Component
+- Directive
+- Page
+- Pipe
+- Provider
+- Tabs
+
+#### Ionic view
+
+Upload the snapshot 
+```sh
+ionic upload
+```
+
+#### Ionic DevApp
+
+```sh
+ionic serve -c
+```
+
+`Phone needs to be in same network as the computer`
+
+If trouble, manually add the address and port specified in the CLI
+
+#### Icons
+
+Ther's a trick to automatically "export" our own splashscreen and icon to all resolution needed to iOS and Android :
+
+1. Delete the content of the resources folder
+2. Paste an icon and splash image file with .png or .psd extension
+3. 
+```sh
+ionic cordova resources
+```
+4. Source path doesn't exists ?
+```sh
+ionic cordova resources
+```
