@@ -111,7 +111,7 @@ In the commit 20bdc59f58789e11a0b568d6debe73e95c12f2c2 we have seen that we can 
 #### Create an Ionic project
 
 ```sh
-ionic start [Project name] [Optional type of project] [optional --type=ionic[number]]
+ionic start [Project name] [Optional type of project] [optional --type=ionic[number]] [optional --no-git] [--no-link]
 ```
 
 #### Listing all the kind of projects
