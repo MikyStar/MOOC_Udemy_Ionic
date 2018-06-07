@@ -181,3 +181,7 @@ ionic cordova resources
 #### Theming
 
 In theme/variables.scss we can find variables that can be put in the html code like attributes and their volues
+
+#### Page strusture
+
+Every pages has an ion-header and a ion-content (and optionnaly an ion-footer)
