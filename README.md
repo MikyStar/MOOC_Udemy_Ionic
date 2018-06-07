@@ -131,7 +131,7 @@ With a virtual device `needs the wanted SDK or the device wanted plugged to the 
 ```sh
 ionic cordova platform add [android / ios] #First of all
 
-ionic cordova run [android / ios] [for live reload -l]
+ionic cordova run [android / ios] [for live reload -l] [--target="TARGET, iOS' version"]
 ```
 
 #### Adding something to the app
@@ -149,7 +149,7 @@ ionic generate [optional thing to generate]
 
 #### Ionic view
 
-Upload the snapshot 
+Upload the snapshot
 ```sh
 ionic upload
 ```
@@ -170,7 +170,7 @@ Ther's a trick to automatically "export" our own splashscreen and icon to all re
 
 1. Delete the content of the resources folder
 2. Paste an icon and splash image file with .png or .psd extension
-3. 
+3.
 ```sh
 ionic cordova resources
 ```
@@ -178,3 +178,6 @@ ionic cordova resources
 ```sh
 ionic cordova resources
 ```
+#### Theming
+
+In theme/variables.scss we can find variables that can be put in the html code like attributes and their volues
