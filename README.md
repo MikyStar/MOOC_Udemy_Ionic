@@ -134,6 +134,12 @@ ionic cordova platform add [android / ios] #First of all
 ionic cordova run [android / ios] [for live reload -l] [--target="TARGET, iOS' version"]
 ```
 
+To run in the browser directly in all the platforms we want, just do
+```sh
+ionic lab
+```
+It will basically allow us to use different user agents in the same page
+
 #### Adding something to the app
 
 ```sh
