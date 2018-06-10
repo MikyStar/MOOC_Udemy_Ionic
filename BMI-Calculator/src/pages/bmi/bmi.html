@@ -6,11 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar color='primary'>
+	<ion-navbar color='primary'>
 
 		<ion-title>BMI Calculator</ion-title>
 
-  </ion-navbar>
+	</ion-navbar>
 
 </ion-header>
 
@@ -23,18 +23,21 @@
 
 			<ion-item>
 				<ion-label>Height (meter)</ion-label>
-				<ion-input></ion-input>
+				<ion-input type="number" [(ngModel)]="height"></ion-input>
 			</ion-item>
 
 			<ion-item>
 				<ion-label>Weight (kg)</ion-label>
-				<ion-input></ion-input>
+				<ion-input type="number" [(ngModel)]="weight"></ion-input>
 			</ion-item>
 
-			<button ion-button color="secondary">Calculate</button> <!-- ion-button  = to make the button an Ionic cross platform adaptative one-->
+			<button ion-button color="secondary" (click)="calculateBMI()">Calculate</button>
+			<!-- ion-button  = to make the button an Ionic cross platform adaptative one-->
 
 		</ion-card-content>
 
 	</ion-card>
+
+	<h2>Your BMI is : {{ bmi }}</h2>
 
 </ion-content>
