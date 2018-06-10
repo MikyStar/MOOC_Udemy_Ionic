@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 @Component(
 {
@@ -10,13 +10,15 @@ export class HomePage
 {
 	personName : string;
 
-	constructor(public navCtrl: NavController)
+	constructor(private toast : ToastController)
 	{}
 
 	showGreeting(name : string)
 	{
-		console.log(name);
-		console.log(this.personName);
+		this.toast.create(
+		{
+			message : `Hello ${name}`,
+			duration : 3000 /* in ms */
+		}).present();
 	}
-
 }
