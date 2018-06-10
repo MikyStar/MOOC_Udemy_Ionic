@@ -146,6 +146,12 @@ It will basically allow us to use different user agents in the same page
 ionic generate [optional thing to generate]
 ```
 
+or
+
+```sh
+ionic g [thing to generate] [name of it]
+```
+
 - Component
 - Directive
 - Page
@@ -191,3 +197,7 @@ In theme/variables.scss we can find variables that can be put in the html code l
 #### Page strusture
 
 Every pages has an ion-header and a ion-content (and optionnaly an ion-footer)
+
+#### Lazy oading
+
+It's done with the "@IonicPage()" tag in the [nameOfPage].ts in the pages subfolder. It allows us to load the page only if the page is needed, otherwise everything will be charged at once while launching the app (at the splashscreen time).
