@@ -6,13 +6,35 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>BMI</ion-title>
+  <ion-navbar color='primary'>
+
+		<ion-title>BMI Calculator</ion-title>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+	<ion-card>
+
+		<ion-card-content>
+
+			<ion-item>
+				<ion-label>Height (meter)</ion-label>
+				<ion-input></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Weight (kg)</ion-label>
+				<ion-input></ion-input>
+			</ion-item>
+
+			<button ion-button color="secondary">Calculate</button> <!-- ion-button  = to make the button an Ionic cross platform adaptative one-->
+
+		</ion-card-content>
+
+	</ion-card>
 
 </ion-content>
