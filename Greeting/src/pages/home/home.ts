@@ -1,14 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-@Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+@Component(
+{
+	selector: 'page-home',
+	templateUrl: 'home.html'
 })
-export class HomePage {
+export class HomePage
+{
+	personName : string;
 
-  constructor(public navCtrl: NavController) {
+	constructor(public navCtrl: NavController)
+	{}
 
-  }
+	showGreeting(name : string)
+	{
+		console.log(name);
+		console.log(this.personName);
+	}
 
 }

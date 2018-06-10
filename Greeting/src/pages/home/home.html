@@ -10,8 +10,9 @@
 
 	<ion-item>
 
+		<!-- float = making it go above the input -->
 		<ion-label floating>Name</ion-label>
-		<ion-input type='text'></ion-input>
+		<ion-input type="text" [(ngModel)]="personName"></ion-input>
 
 	</ion-item>
 
@@ -19,6 +20,6 @@
 		block = all the screen
 		clear = just the text, no background
 	-->
-	<button ion-button block clear>Show greeting</button>
+	<button ion-button block clear (click)="showGreeting(personName)">Show greeting</button>
 
 </ion-content>
