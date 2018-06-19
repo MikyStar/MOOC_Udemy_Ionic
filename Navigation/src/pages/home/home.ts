@@ -29,4 +29,8 @@ export class HomePage
 		this.navCtrl.push( 'SecondPage' );
 	}
 
+	navigateToAboutPage(): void
+	{
+		this.navCtrl.push( 'AboutPage' );
+	}
 }
