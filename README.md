@@ -201,3 +201,9 @@ Every pages has an ion-header and a ion-content (and optionnaly an ion-footer)
 #### Lazy oading
 
 It's done with the "@IonicPage()" tag in the [nameOfPage].ts in the pages subfolder. It allows us to load the page only if the page is needed, otherwise everything will be charged at once while launching the app (at the splashscreen time).
+
+##### Shared Modules
+
+An example of a Shared Module is the "components.module.ts" that we can find under the "components" folder `see commit f5cef1bd8`.
+This is basically a factory for Imports. Just like the message of my commit says, thanks to that solution, all exports are encapsulated under one file meaning that we don't have to bother to import, for example here, every components by hand, we just have to import the class from the Shared Module folder and we can access, here, to all of our components.
+Nonetheless, this solution is not very good if we have a large amount of components, it can reduce the performances.
